@@ -27,32 +27,29 @@ const Resume = () => {
           className="glass-card p-8"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold">Alex Morgan</h2>
+            <h2 className="text-3xl font-bold">Guru Prasad</h2>
             <p className="text-xl text-muted-foreground">Full Stack Developer</p>
             <div className="flex justify-center items-center gap-4 mt-2 text-sm">
-              <span>alex@example.com</span>
+              <span>mrguruprasad05@gmail.com</span>
               <span>•</span>
-              <span>+1 (555) 123-4567</span>
+              <span>+91 9361927611</span>
             </div>
           </div>
 
           <div className="space-y-8">
             <section>
-              <h3 className="text-2xl font-bold text-gradient mb-4">Experience</h3>
+              <h3 className="text-2xl font-bold text-gradient mb-4">Education</h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-primary pl-4">
-                  <h4 className="font-semibold">Senior Frontend Developer</h4>
-                  <p className="text-muted-foreground">TechCorp Inc. • 2022 - Present</p>
-                  <p className="text-sm mt-2">Led development of user-facing applications serving 100k+ users</p>
+                  <h4 className="font-semibold">B TECH IT</h4>
+                  <p className="text-muted-foreground">Anna University • 2022 - 2026</p>
+                  <p className="text-sm mt-2">Information Technology Engineering Program</p>
                 </div>
-              </div>
-            </section>
-
-            <section>
-              <h3 className="text-2xl font-bold text-gradient mb-4">Education</h3>
-              <div className="border-l-4 border-secondary pl-4">
-                <h4 className="font-semibold">B.S. Computer Science</h4>
-                <p className="text-muted-foreground">University of Technology • 2020</p>
+                <div className="border-l-4 border-secondary pl-4">
+                  <h4 className="font-semibold">Full Stack Development</h4>
+                  <p className="text-muted-foreground">NXTWAVE Academy • Student</p>
+                  <p className="text-sm mt-2">Comprehensive full-stack development program</p>
+                </div>
               </div>
             </section>
           </div>

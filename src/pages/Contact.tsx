@@ -11,7 +11,10 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    const { name, email, message } = formData;
+    const subject = `Portfolio Contact from ${name}`;
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+    window.location.href = `mailto:mrguruprasad05@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -39,9 +42,9 @@ const Contact = () => {
             <h2 className="text-2xl font-bold mb-6">Let's Work Together</h2>
             <div className="space-y-6">
               {[
-                { icon: Mail, label: 'Email', value: 'alex@example.com' },
-                { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567' },
-                { icon: MapPin, label: 'Location', value: 'San Francisco, CA' }
+                { icon: Mail, label: 'Email', value: 'mrguruprasad05@gmail.com' },
+                { icon: Phone, label: 'Phone', value: '+91 9361927611' },
+                { icon: MapPin, label: 'Location', value: 'India' }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-4 glass-card p-4">
                   <item.icon className="text-primary" size={24} />

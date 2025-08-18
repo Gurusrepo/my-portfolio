@@ -6,28 +6,19 @@ const Skills = () => {
 
   const skillCategories = {
     Frontend: [
-      { name: 'React.js', level: 95, icon: '⚛️' },
-      { name: 'TypeScript', level: 90, icon: '📘' },
-      { name: 'Next.js', level: 85, icon: '▲' },
-      { name: 'Tailwind CSS', level: 92, icon: '🎨' },
-      { name: 'JavaScript', level: 95, icon: '📜' },
-      { name: 'HTML/CSS', level: 98, icon: '🌐' },
+      { name: 'HTML', level: 80, icon: '🌐' },
+      { name: 'CSS', level: 80, icon: '🎨' },
+      { name: 'JavaScript', level: 80, icon: '📜' },
+      { name: 'React.js', level: 80, icon: '⚛️' },
     ],
     Backend: [
-      { name: 'Node.js', level: 88, icon: '🟢' },
-      { name: 'Express.js', level: 85, icon: '🚂' },
-      { name: 'MongoDB', level: 80, icon: '🍃' },
-      { name: 'PostgreSQL', level: 75, icon: '🐘' },
-      { name: 'RESTful APIs', level: 90, icon: '🔌' },
-      { name: 'GraphQL', level: 70, icon: '📊' },
+      { name: 'Node.js', level: 80, icon: '🟢' },
+      { name: 'Python', level: 80, icon: '🐍' },
     ],
     Tools: [
-      { name: 'Git/GitHub', level: 95, icon: '🔧' },
-      { name: 'VS Code', level: 95, icon: '💻' },
-      { name: 'Docker', level: 75, icon: '🐳' },
-      { name: 'AWS', level: 70, icon: '☁️' },
-      { name: 'Vercel', level: 85, icon: '▲' },
-      { name: 'Figma', level: 80, icon: '🎨' },
+      { name: 'GitHub', level: 80, icon: '🔧' },
+      { name: 'VS Code', level: 80, icon: '💻' },
+      { name: 'Bootstrap', level: 80, icon: '🅱️' },
     ],
     Soft: [
       { name: 'Problem Solving', level: 95, icon: '🧩' },
