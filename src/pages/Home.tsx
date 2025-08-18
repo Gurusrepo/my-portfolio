@@ -125,24 +125,7 @@ I enjoy solving problems, building dynamic applications, and creating digital so
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div initial={{
-        opacity: 0
-      }} animate={{
-        opacity: 1
-      }} transition={{
-        delay: 1.5,
-        duration: 0.8
-      }} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-sm text-muted-foreground">Scroll to explore</span>
-          <motion.div animate={{
-          y: [0, 10, 0]
-        }} transition={{
-          duration: 2,
-          repeat: Infinity
-        }} className="p-2 rounded-full border border-primary/30 hover:border-primary transition-colors cursor-pointer">
-            <ChevronDown size={20} className="text-primary" />
-          </motion.div>
-        </motion.div>
+        
       </section>
 
       {/* Quick Skills Preview */}
