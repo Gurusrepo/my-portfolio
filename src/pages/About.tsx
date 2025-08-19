@@ -63,7 +63,7 @@ const About = () => {
             </div>
 
             {/* Bio */}
-            <div className="glass-card p-8">
+            <div className="glass-card p-8 text-center">
               <h2 className="text-2xl font-bold mb-4 text-gradient">Hello, I'm Guru!</h2>
               <p className="text-foreground/80 leading-relaxed mb-6 mx-[10px] font-medium text-lg">I’m a passionate Full-Stack Developer with a strong foundation in both frontend design and backend architecture. From crafting intuitive user interfaces to building robust server-side logic, I enjoy every step of the development process. </p>
               
