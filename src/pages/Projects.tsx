@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import cricketImage from '../assets/cricket-ecommerce.jpg';
+import portfolioImage from '../assets/portfolio-website.jpg';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements built with React and Framer Motion.',
-      image: '💼',
+      image: portfolioImage,
       technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Three.js'],
       github: 'https://github.com/guruprasad/portfolio',
       live: 'https://portfolio-demo.com',
