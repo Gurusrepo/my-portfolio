@@ -52,7 +52,7 @@ const About = () => {
           delay: 0.2
         }} className="space-y-8">
             {/* Profile Image */}
-            <div className="relative">
+            <div className="relative mx-0">
               <div className="w-64 h-64 mx-auto lg:mx-0 rounded-full glass-card p-4 animate-glow">
                 <img src={profilePhoto} alt="Guru Prasad - Full Stack Developer" className="w-full h-full rounded-full object-cover" />
               </div>
