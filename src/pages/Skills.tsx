@@ -6,19 +6,19 @@ const Skills = () => {
 
   const skillCategories = {
     Frontend: [
-      { name: 'HTML', level: 82, icon: '🌐' },
-      { name: 'CSS', level: 78, icon: '🎨' },
-      { name: 'JavaScript', level: 85, icon: '📜' },
-      { name: 'React.js', level: 81, icon: '⚛️' },
+      { name: 'HTML', level: 87, icon: '🌐' },
+      { name: 'CSS', level: 84, icon: '🎨' },
+      { name: 'JavaScript', level: 89, icon: '📜' },
+      { name: 'React.js', level: 86, icon: '⚛️' },
     ],
     Backend: [
-      { name: 'Node.js', level: 83, icon: '🟢' },
-      { name: 'Python', level: 79, icon: '🐍' },
+      { name: 'Node.js', level: 88, icon: '🟢' },
+      { name: 'Python', level: 83, icon: '🐍' },
     ],
     Tools: [
-      { name: 'GitHub', level: 84, icon: '🔧' },
-      { name: 'VS Code', level: 77, icon: '💻' },
-      { name: 'Bootstrap', level: 76, icon: '🅱️' },
+      { name: 'GitHub', level: 90, icon: '🔧' },
+      { name: 'VS Code', level: 85, icon: '💻' },
+      { name: 'Bootstrap', level: 82, icon: '🅱️' },
     ],
     Soft: [
       { name: 'Problem Solving', level: 95, icon: '🧩' },

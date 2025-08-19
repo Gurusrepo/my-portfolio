@@ -5,6 +5,15 @@ import cricketImage from '../assets/cricket-ecommerce.jpg';
 const Projects = () => {
   const projects = [
     {
+      title: 'Portfolio Website',
+      description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements built with React and Framer Motion.',
+      image: '💼',
+      technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Three.js'],
+      github: 'https://github.com/guruprasad/portfolio',
+      live: 'https://portfolio-demo.com',
+      featured: true,
+    },
+    {
       title: 'Cricket E-commerce Platform',
       description: 'A comprehensive e-commerce platform for cricket equipment and accessories featuring product catalog, shopping cart, and user authentication.',
       image: cricketImage,
@@ -54,12 +63,22 @@ const Projects = () => {
                 className="project-card group"
               >
                 {/* Project Image */}
-                <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden mb-6">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-6">
+                  {typeof project.image === 'string' && project.image.startsWith('/') ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  ) : typeof project.image === 'string' && project.image.includes('.jpg') ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  ) : (
+                    <div className="text-8xl">{project.image}</div>
+                  )}
                 </div>
 
                 {/* Project Info */}

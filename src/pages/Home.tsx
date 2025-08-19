@@ -137,7 +137,7 @@ I enjoy solving problems, building dynamic applications, and creating digital so
           duration: 0.8,
           delay: 0.2
         }} className="flex justify-center items-center gap-8 flex-wrap">
-            {['React', 'Node.js', 'Tailwind CSS'].map((tech, index) => <motion.div key={tech} initial={{
+            {['React', 'Node.js', 'Tailwind CSS', 'CSS Flexbox'].map((tech, index) => <motion.div key={tech} initial={{
             opacity: 0,
             scale: 0.8
           }} whileInView={{
