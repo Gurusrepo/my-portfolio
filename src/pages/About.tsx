@@ -39,7 +39,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ">
           {/* Profile Section */}
           <motion.div initial={{
           opacity: 0,
@@ -54,11 +54,7 @@ const About = () => {
             {/* Profile Image */}
             <div className="relative">
               <div className="w-64 h-64 mx-auto lg:mx-0 rounded-full glass-card p-4 animate-glow">
-                <img 
-                  src={profilePhoto} 
-                  alt="Guru Prasad - Full Stack Developer"
-                  className="w-full h-full rounded-full object-cover"
-                />
+                <img src={profilePhoto} alt="Guru Prasad - Full Stack Developer" className="w-full h-full rounded-full object-cover" />
               </div>
             </div>
 
