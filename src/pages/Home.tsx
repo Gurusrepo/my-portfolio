@@ -136,7 +136,7 @@ I enjoy solving problems, building dynamic applications, and creating digital so
         }} transition={{
           duration: 0.8,
           delay: 0.2
-        }} className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        }} className="flex justify-center items-center gap-8 flex-wrap">
             {['React', 'Node.js', 'Tailwind CSS'].map((tech, index) => <motion.div key={tech} initial={{
             opacity: 0,
             scale: 0.8

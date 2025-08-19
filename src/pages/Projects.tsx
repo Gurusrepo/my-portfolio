@@ -1,21 +1,13 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+import cricketImage from '../assets/cricket-ecommerce.jpg';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements built with React and Framer Motion.',
-      image: '💼',
-      technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Three.js'],
-      github: 'https://github.com/guruprasad/portfolio',
-      live: 'https://portfolio-demo.com',
-      featured: true,
-    },
-    {
       title: 'Cricket E-commerce Platform',
       description: 'A comprehensive e-commerce platform for cricket equipment and accessories featuring product catalog, shopping cart, and user authentication.',
-      image: '🏏',
+      image: cricketImage,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
       github: 'https://github.com/guruprasad/cricket-ecommerce',
       live: 'https://cricket-store-demo.com',
@@ -44,19 +36,16 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        {/* Featured Projects */}
+        {/* Projects */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-20"
         >
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            <span className="text-gradient">Featured Projects</span>
-          </h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {featuredProjects.map((project, index) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center max-w-4xl mx-auto">
+            {projects.map((project, index) => (
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 50 }}
@@ -64,9 +53,13 @@ const Projects = () => {
                 transition={{ duration: 0.6, delay: 0.4 + index * 0.2 }}
                 className="project-card group"
               >
-                {/* Project Image/Icon */}
-                <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-8xl mb-6">
-                  {project.image}
+                {/* Project Image */}
+                <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden mb-6">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Project Info */}
@@ -115,80 +108,6 @@ const Projects = () => {
           </div>
         </motion.div>
 
-        {/* Other Projects */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Other <span className="text-gradient">Projects</span>
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project, index) => (
-              <motion.div
-                key={project.title}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                className="project-card group"
-              >
-                {/* Project Icon */}
-                <div className="h-32 bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-5xl mb-4">
-                  {project.image}
-                </div>
-
-                {/* Project Info */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-foreground/80 text-sm mb-4">
-                    {project.description}
-                  </p>
-
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-1 mb-4">
-                    {project.technologies.slice(0, 3).map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-1 bg-primary/10 text-primary rounded text-xs"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-2 py-1 bg-muted text-muted-foreground rounded text-xs">
-                        +{project.technologies.length - 3}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Links */}
-                  <div className="flex gap-2">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 px-3 py-2 glass-card hover:border-primary transition-colors text-sm"
-                    >
-                      <Github size={16} />
-                      Code
-                    </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-background transition-colors text-sm rounded"
-                    >
-                      <ExternalLink size={16} />
-                      Live
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* CTA Section */}
         <motion.div

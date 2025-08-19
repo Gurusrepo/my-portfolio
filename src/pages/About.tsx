@@ -39,7 +39,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ">
+        <div className="flex flex-col lg:flex-row gap-16 items-center justify-center">
           {/* Profile Section */}
           <motion.div initial={{
           opacity: 0,
