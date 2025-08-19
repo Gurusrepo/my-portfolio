@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Heart, Coffee } from 'lucide-react';
+import profilePhoto from '../assets/profile-photo.jpg';
 const About = () => {
   const timeline = [{
     year: '2020',
@@ -53,9 +54,11 @@ const About = () => {
             {/* Profile Image */}
             <div className="relative">
               <div className="w-64 h-64 mx-auto lg:mx-0 rounded-full glass-card p-4 animate-glow">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-6xl">
-                  👨‍💻
-                </div>
+                <img 
+                  src={profilePhoto} 
+                  alt="Guru Prasad - Full Stack Developer"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
             </div>
 

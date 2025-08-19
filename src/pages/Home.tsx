@@ -80,31 +80,6 @@ I enjoy solving problems, building dynamic applications, and creating digital so
               </Link>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 1,
-            duration: 0.8
-          }} className="flex justify-center lg:justify-start gap-8 mt-12">
-              {[{
-              number: '50+',
-              label: 'Projects'
-            }, {
-              number: '3+',
-              label: 'Years Experience'
-            }, {
-              number: '100%',
-              label: 'Client Satisfaction'
-            }].map((stat, index) => <div key={index} className="text-center">
-                  <div className="text-2xl font-bold text-gradient">{stat.number}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>)}
-            </motion.div>
           </motion.div>
 
           {/* 3D Scene */}
@@ -162,7 +137,7 @@ I enjoy solving problems, building dynamic applications, and creating digital so
           duration: 0.8,
           delay: 0.2
         }} className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {['React', 'TypeScript', 'Node.js', 'Next.js', 'Tailwind', 'MongoDB'].map((tech, index) => <motion.div key={tech} initial={{
+            {['React', 'Node.js', 'Tailwind CSS'].map((tech, index) => <motion.div key={tech} initial={{
             opacity: 0,
             scale: 0.8
           }} whileInView={{
