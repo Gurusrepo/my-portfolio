@@ -108,15 +108,15 @@ const Layout = ({
     }} className="fixed bottom-6 left-6 z-40 hidden lg:flex flex-col space-y-4">
         {[{
         name: 'GitHub',
-        url: 'https://github.com',
+        url: 'https://github.com/Guru887',
         icon: '🔗'
       }, {
         name: 'LinkedIn',
-        url: 'https://linkedin.com',
+        url: 'https://www.linkedin.com/in/guru-prasad-mohan',
         icon: '💼'
       }, {
         name: 'Twitter',
-        url: 'https://twitter.com',
+        url: 'https://x.com/mrguruprasad05',
         icon: '🐦'
       }].map(social => <motion.a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" whileHover={{
         scale: 1.2,
