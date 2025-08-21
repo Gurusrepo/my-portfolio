@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Download, Calendar, MapPin } from 'lucide-react';
+import certificateStaticWebsite from '../assets/certificate-static-website.jpg';
+import certificateSQL from '../assets/certificate-sql.jpg';
 
 const Resume = () => {
   return (
@@ -63,7 +65,7 @@ const Resume = () => {
           className="glass-card p-8 mt-8"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gradient">Guru Prasad</h2>
+            <h2 className="text-3xl font-bold text-gradient">Earned Certificates</h2>
           </div>
 
           <section>
@@ -73,7 +75,7 @@ const Resume = () => {
                 <h4 className="text-xl font-semibold mb-4">Building Static Website</h4>
                 <div className="flex justify-center mb-6">
                   <img 
-                    src="/src/assets/certificate-static-website.jpg" 
+                    src={certificateStaticWebsite} 
                     alt="Building Static Website Certificate" 
                     className="max-w-full h-auto rounded-lg shadow-lg"
                   />
@@ -102,7 +104,7 @@ const Resume = () => {
                 <h4 className="text-xl font-semibold mb-4">Database Management (SQL)</h4>
                 <div className="flex justify-center mb-6">
                   <img 
-                    src="/src/assets/certificate-sql.jpg" 
+                    src={certificateSQL} 
                     alt="Database Management SQL Certificate" 
                     className="max-w-full h-auto rounded-lg shadow-lg"
                   />
