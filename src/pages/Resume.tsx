@@ -53,6 +53,17 @@ const Resume = () => {
                 </div>
               </div>
             </section>
+
+            <section>
+              <h3 className="text-2xl font-bold text-gradient mb-4">Experience</h3>
+              <div className="space-y-4">
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold">Full Stack Developer Intern</h4>
+                  <p className="text-muted-foreground">Tech Company • 2024 - Present</p>
+                  <p className="text-sm mt-2">Working on modern web applications using React and Node.js</p>
+                </div>
+              </div>
+            </section>
           </div>
         </motion.div>
       </div>
