@@ -53,18 +53,81 @@ const Resume = () => {
                 </div>
               </div>
             </section>
+          </div>
+        </motion.div>
 
-            <section>
-              <h3 className="text-2xl font-bold text-gradient mb-4">Experience</h3>
-              <div className="space-y-4">
-                <div className="border-l-4 border-primary pl-4">
-                  <h4 className="font-semibold">Full Stack Developer Intern</h4>
-                  <p className="text-muted-foreground">Tech Company • 2024 - Present</p>
-                  <p className="text-sm mt-2">Working on modern web applications using React and Node.js</p>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="glass-card p-8 mt-8"
+        >
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gradient">Guru Prasad</h2>
+          </div>
+
+          <section>
+            <h3 className="text-2xl font-bold text-gradient mb-6">Certificates</h3>
+            <div className="space-y-12">
+              <div className="border-l-4 border-primary pl-6">
+                <h4 className="text-xl font-semibold mb-4">Building Static Website</h4>
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="/src/assets/certificate-static-website.jpg" 
+                    alt="Building Static Website Certificate" 
+                    className="max-w-full h-auto rounded-lg shadow-lg"
+                  />
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-semibold text-primary mb-2">Outcome:</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Build a static website that appears beautifully on mobile screens. Develop a Tourism website to browse through the content, videos, and images of popular destinations, websites to host conferences and events, etc. Publish your website and share it with your friends, family and beyond. Learn to use tools and technologies such as HTML, CSS and Bootstrap.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-2">Key Learnings:</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Projects are a perfect place for you to become the creator of Technology that we use every day. Create and publish your own websites and showcase your skills to the world. Master the concepts of Full-stack development right from the basics and gain practical skills that are highly valued by companies. These skills will be very useful as you go on to innovate using 4.0 Tech and build real-world applications.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-2">Key Skills:</h5>
+                    <p className="text-muted-foreground text-sm font-medium">HTML, CSS, BOOTSTRAP</p>
+                  </div>
                 </div>
               </div>
-            </section>
-          </div>
+
+              <div className="border-l-4 border-secondary pl-6">
+                <h4 className="text-xl font-semibold mb-4">Database Management (SQL)</h4>
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="/src/assets/certificate-sql.jpg" 
+                    alt="Database Management SQL Certificate" 
+                    className="max-w-full h-auto rounded-lg shadow-lg"
+                  />
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-semibold text-primary mb-2">Outcome:</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Learned about the incredibly prevalent databases. Through this course, I developed strong fundamentals and became proficient in concepts related to Databases and DBMS. Most importantly, I am able to perform powerful queries on databases using SQL.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-2">Key Learnings:</h5>
+                    <p className="text-muted-foreground text-sm">
+                      The objective of the course is to present an introduction to database management systems, with an emphasis on how to organize, maintain and retrieve - efficiently, and effectively - information from a DBMS.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-2">Key Skills:</h5>
+                    <p className="text-muted-foreground text-sm font-medium">SQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </motion.div>
       </div>
     </div>
