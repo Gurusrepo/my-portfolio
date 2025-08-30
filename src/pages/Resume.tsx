@@ -2,41 +2,26 @@ import { motion } from 'framer-motion';
 import { Download, Calendar, MapPin } from 'lucide-react';
 import certificateStaticWebsite from '../assets/certificate-static-website.jpg';
 import certificateSQL from '../assets/certificate-sql.jpg';
+import certificateBootstrapFlexbox from '../assets/certificate-bootstrap-flexbox.jpg';
 
 const Resume = () => {
   return (
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            My <span className="text-gradient">Resume</span>
-          </h1>
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="glass-card p-8"
+          className="glass-card p-8 max-w-2xl mx-auto"
         >
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold">Guru Prasad</h2>
-            <p className="text-xl text-muted-foreground">Full Stack Developer</p>
-            <div className="flex justify-center items-center gap-4 mt-2 text-sm">
-              <span>mrguruprasad05@gmail.com</span>
-              <span>•</span>
-              <span>+91 9361927611</span>
-            </div>
           </div>
 
           <div className="space-y-8">
             <section>
-              <h3 className="text-2xl font-bold text-gradient mb-4">Education</h3>
+              <h3 className="text-2xl font-bold text-gradient mb-4 text-center">Education</h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-primary pl-4">
                   <h4 className="font-semibold">Higher Secondary Education</h4>
@@ -62,16 +47,30 @@ const Resume = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="glass-card p-8 mt-8"
+          className="glass-card p-8 mt-8 max-w-4xl mx-auto"
         >
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gradient">Earned Certificates</h2>
           </div>
 
           <section>
-            <h3 className="text-2xl font-bold text-gradient mb-6">Certificates</h3>
             <div className="space-y-12">
               <div className="border-l-4 border-primary pl-6">
+                <h4 className="text-xl font-semibold mb-4">Bootstrap and Flexbox</h4>
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src={certificateBootstrapFlexbox} 
+                    alt="Bootstrap and Flexbox Certificate" 
+                    className="max-w-full h-auto rounded-lg shadow-lg"
+                  />
+                </div>
+                <div>
+                  <h5 className="font-semibold text-primary mb-2">Key Skills:</h5>
+                  <p className="text-muted-foreground text-sm font-medium">HTML, CSS, Bootstrap</p>
+                </div>
+              </div>
+
+              <div className="border-l-4 border-secondary pl-6">
                 <h4 className="text-xl font-semibold mb-4">Building Static Website</h4>
                 <div className="flex justify-center mb-6">
                   <img 
@@ -80,27 +79,13 @@ const Resume = () => {
                     className="max-w-full h-auto rounded-lg shadow-lg"
                   />
                 </div>
-                <div className="space-y-4">
-                  <div>
-                    <h5 className="font-semibold text-primary mb-2">Outcome:</h5>
-                    <p className="text-muted-foreground text-sm">
-                      Build a static website that appears beautifully on mobile screens. Develop a Tourism website to browse through the content, videos, and images of popular destinations, websites to host conferences and events, etc. Publish your website and share it with your friends, family and beyond. Learn to use tools and technologies such as HTML, CSS and Bootstrap.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-2">Key Learnings:</h5>
-                    <p className="text-muted-foreground text-sm">
-                      Projects are a perfect place for you to become the creator of Technology that we use every day. Create and publish your own websites and showcase your skills to the world. Master the concepts of Full-stack development right from the basics and gain practical skills that are highly valued by companies. These skills will be very useful as you go on to innovate using 4.0 Tech and build real-world applications.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-2">Key Skills:</h5>
-                    <p className="text-muted-foreground text-sm font-medium">HTML, CSS, BOOTSTRAP</p>
-                  </div>
+                <div>
+                  <h5 className="font-semibold text-primary mb-2">Key Skills:</h5>
+                  <p className="text-muted-foreground text-sm font-medium">HTML, CSS, BOOTSTRAP</p>
                 </div>
               </div>
 
-              <div className="border-l-4 border-secondary pl-6">
+              <div className="border-l-4 border-accent pl-6">
                 <h4 className="text-xl font-semibold mb-4">Database Management (SQL)</h4>
                 <div className="flex justify-center mb-6">
                   <img 
@@ -109,23 +94,9 @@ const Resume = () => {
                     className="max-w-full h-auto rounded-lg shadow-lg"
                   />
                 </div>
-                <div className="space-y-4">
-                  <div>
-                    <h5 className="font-semibold text-primary mb-2">Outcome:</h5>
-                    <p className="text-muted-foreground text-sm">
-                      Learned about the incredibly prevalent databases. Through this course, I developed strong fundamentals and became proficient in concepts related to Databases and DBMS. Most importantly, I am able to perform powerful queries on databases using SQL.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-2">Key Learnings:</h5>
-                    <p className="text-muted-foreground text-sm">
-                      The objective of the course is to present an introduction to database management systems, with an emphasis on how to organize, maintain and retrieve - efficiently, and effectively - information from a DBMS.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-2">Key Skills:</h5>
-                    <p className="text-muted-foreground text-sm font-medium">SQL</p>
-                  </div>
+                <div>
+                  <h5 className="font-semibold text-primary mb-2">Key Skills:</h5>
+                  <p className="text-muted-foreground text-sm font-medium">SQL</p>
                 </div>
               </div>
             </div>

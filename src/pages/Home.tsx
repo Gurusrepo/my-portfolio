@@ -108,59 +108,6 @@ I enjoy solving problems, building dynamic applications, and creating digital so
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{
           opacity: 0,
-          y: 50
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          duration: 0.8
-        }} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              What I <span className="text-gradient">Build With</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Modern technologies for cutting-edge solutions
-            </p>
-          </motion.div>
-
-          <motion.div initial={{
-          opacity: 0,
-          y: 50
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          duration: 0.8,
-          delay: 0.2
-        }} className="flex justify-center items-center gap-8 flex-wrap">
-            {['React', 'Node.js', 'Tailwind CSS', 'CSS Flexbox'].map((tech, index) => <motion.div key={tech} initial={{
-            opacity: 0,
-            scale: 0.8
-          }} whileInView={{
-            opacity: 1,
-            scale: 1
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 0.5,
-            delay: index * 0.1
-          }} whileHover={{
-            scale: 1.05,
-            y: -5
-          }} className="glass-card p-6 text-center group cursor-pointer">
-                <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">
-                  ⚡
-                </div>
-                <div className="text-sm font-medium">{tech}</div>
-              </motion.div>)}
-          </motion.div>
-
-          <motion.div initial={{
-          opacity: 0,
           y: 30
         }} whileInView={{
           opacity: 1,
@@ -170,7 +117,7 @@ I enjoy solving problems, building dynamic applications, and creating digital so
         }} transition={{
           duration: 0.8,
           delay: 0.4
-        }} className="text-center mt-12">
+        }} className="text-center">
             <Link to="/skills" className="hero-button-outline">
               View All Skills
             </Link>

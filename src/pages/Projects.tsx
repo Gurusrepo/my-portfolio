@@ -23,6 +23,15 @@ const Projects = () => {
       live: 'https://cricket-store-demo.com',
       featured: true,
     },
+    {
+      title: 'ATM Machine',
+      description: 'A mini project simulating ATM machine functionality with user authentication and transaction processing built with Python and web technologies.',
+      image: '💳',
+      technologies: ['Python', 'HTML', 'CSS', 'Procfile'],
+      github: 'https://github.com/Guru887/ATM-machine-clone.git',
+      live: 'https://atm-machine-wed.onrender.com/login',
+      featured: false,
+    },
   ];
 
   const featuredProjects = projects.filter(p => p.featured);
