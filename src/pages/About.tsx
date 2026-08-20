@@ -53,8 +53,8 @@ const About = () => {
         }} className="space-y-8">
             {/* Profile Image */}
             <div className="relative mx-auto">
-              <div className="w-64 h-64 mx-auto rounded-full glass-card p-4 animate-glow">
-                <img src={profilePhoto} alt="Guru Prasad - Full Stack Developer" className="w-full h-full rounded-full object-cover" />
+              <div className="w-64 h-64 mx-auto rounded-full glass-card p-4 animate-glow items-center">
+                <img src="https://i.ibb.co/q3jtvTfZ/professional-photo.jpg" alt="Guru Prasad - Full Stack Developer" className="w-full h-full rounded-full object-cover" />
               </div>
             </div>
 
