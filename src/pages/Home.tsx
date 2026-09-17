@@ -3,7 +3,7 @@ import { ChevronDown, Download, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ParticlesBackground from '../components/ParticlesBackground';
 import Scene from '../components/3D/Scene';
-const Home = () => {
+const  Home = () => {
   return <div className="relative min-h-screen overflow-hidden">
       {/* Particles Background */}
       <div className="absolute inset-0 z-0">

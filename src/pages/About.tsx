@@ -2,23 +2,7 @@ import { motion } from 'framer-motion';
 import { Calendar, MapPin, Heart, Coffee } from 'lucide-react';
 import profilePhoto from '../assets/profile-photo.jpg';
 const About = () => {
-  const timeline = [{
-    year: '2020',
-    title: 'Started Web Development Journey',
-    description: 'Began learning HTML, CSS, and JavaScript. Built my first static website.'
-  }, {
-    year: '2021',
-    title: 'Mastered Frontend Frameworks',
-    description: 'Dove deep into React.js and modern frontend development practices.'
-  }, {
-    year: '2022',
-    title: 'Full Stack Development',
-    description: 'Expanded to backend technologies including Node.js, databases, and APIs.'
-  }, {
-    year: '2023',
-    title: 'Professional Experience',
-    description: 'Started working on real-world projects and contributing to open source.'
-  }];
+  
   return <div className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
