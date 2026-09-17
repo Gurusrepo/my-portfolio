@@ -20,7 +20,7 @@ const Projects = () => {
       image: cricketImage,
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
       github: 'https://github.com/Gurusrepo',
-      live: 'https://cricket-store-demo.com',
+      live: '',
       featured: true,
     },
     {
@@ -28,15 +28,13 @@ const Projects = () => {
       description: 'A mini project simulating ATM machine functionality with user authentication and transaction processing built with Python and web technologies.',
       image: '💳',
       technologies: ['Python', 'HTML', 'CSS', 'Procfile'],
-      github: 'https://github.com/Guru/ATM-machine-clone.git',
-      live: 'https://atm-machine-wed.onrender.com/login',
+      github: 'https://github.com/Gurusrepo',
+      live: '',
       featured: false,
     },
   ];
 
-  const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
-
+ 
   return (
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-7xl mx-auto">

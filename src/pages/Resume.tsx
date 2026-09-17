@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Download, Calendar, MapPin } from 'lucide-react';
 import certificateStaticWebsite from '../assets/certificate-static-website.jpg';
 import certificateSQL from '../assets/certificate-sql.jpg';
 import certificateBootstrapFlexbox from '../assets/certificate-bootstrap-flexbox.jpg';

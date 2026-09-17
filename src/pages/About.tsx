@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Heart, Coffee } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import profilePhoto from '../assets/profile-photo.jpg';
 const About = () => {
   
@@ -50,10 +50,6 @@ const About = () => {
 
               {/* Quick Facts */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center gap-3">
-                  
-                  <span className="text-sm"></span>
-                </div>
                 <div className="flex items-center gap-3">
                   <MapPin size={20} className="text-primary mx-0 my-[10px]" />
                   <span className="text-sm">India , Chennai</span>

@@ -35,9 +35,13 @@ const ParticlesBackground = () => {
       }
     };
 
+    let animationFrameId: number;
+
     const animate = () => {
       ctx.fillStyle = 'rgba(15, 15, 35, 0.1)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      
 
       particles.forEach((particle, i) => {
         particle.x += particle.vx;
@@ -70,7 +74,7 @@ const ParticlesBackground = () => {
         });
       });
 
-      requestAnimationFrame(animate);
+    animationFrameId = requestAnimationFrame(animate);
     };
 
     resizeCanvas();
@@ -81,6 +85,7 @@ const ParticlesBackground = () => {
 
     return () => {
       window.removeEventListener('resize', resizeCanvas);
+      cancelAnimationFrame(animationFrameId);
     };
   }, []);
 
